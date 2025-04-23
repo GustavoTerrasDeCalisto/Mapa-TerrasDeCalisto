@@ -154,7 +154,6 @@ h1 {
     display: block;
     max-width: 100%;
     height: auto;
-    aspect-ratio: 2 / 3;
     object-fit: contain;
   }
   
