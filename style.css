@@ -77,8 +77,8 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
   width: 90%;
-  max-width: 500px;
-  max-height: 400px; /* Altura máxima da tela */
+  max-width: 700px;
+  max-height: 600px; /* Altura máxima da tela */
   overflow-y: auto; /* ROLAGEM GERAL DO POPUP */
   text-align: center;
 }
@@ -101,7 +101,7 @@ h1 {
 /* Imagem */
 .popup img {
   max-width: 100%;
-  max-height: 200px;
+  max-height: 400px;
   width: auto;
   height: auto;
   display: block;
@@ -138,8 +138,9 @@ h1 {
   }
 
   .popup {
-    width: 90%;
-    padding: 15px;
+    width: 85%;
+    height: 95%;
+    padding: 10px;
   }
 
   .popup-title {
@@ -152,7 +153,7 @@ h1 {
 
   .popup img {
     display: block;
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
     object-fit: contain;
   }
