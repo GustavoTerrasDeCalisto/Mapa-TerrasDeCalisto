@@ -93,7 +93,10 @@ document.querySelectorAll('.popup-trigger').forEach(circle => {
     const popupId = circle.getAttribute('data-popup-id');
     document.querySelectorAll('.popup').forEach(p => p.style.display = 'none');
     const popup = document.getElementById(popupId);
-    if (popup) popup.style.display = 'block';
+    if (popup) {
+      popup.style.display = 'block';
+      loadImages(popup); // ⬅️ carregamento sob demanda
+    }
   });
 });
 
@@ -121,3 +124,10 @@ document.querySelectorAll('.close-btn').forEach(btn => {
   });
 });
 
+function loadImages(popup) {
+  popup.querySelectorAll('img.lazy-img').forEach(img => {
+    if (!img.src) {
+      img.src = img.getAttribute('data-src');
+    }
+  });
+}
